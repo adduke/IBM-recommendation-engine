@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import pickle
+import os
+os.chdir('/Users/abiibrahim/PycharmProjects/IBM-recommendation-engine')
 
 df = pd.read_csv('data/user-item-interactions.csv')
 df_content = pd.read_csv('data/articles_community.csv')
@@ -36,7 +38,7 @@ def sol_2_test(top_articles):
     
     checks = ['top_5', 'top_10', 'top_20']
     for idx, file in enumerate(checks):
-        if set(eval(file)) == set(pickle.load(open( "{}.p".format(file), "rb" ))):
+        if set(eval(file)) == set(pickle.load(open( "models/{}.p".format(file), "rb" ))):
             print("Your {} looks like the solution list! Nice job.".format(file))
         else:
             print("Oops! The {} list doesn't look how we expected.  Try again.".format(file))

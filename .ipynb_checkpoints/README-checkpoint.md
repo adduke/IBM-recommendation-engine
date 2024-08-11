@@ -24,10 +24,9 @@ Project contains all files to recommend IBM Watson Studio content.
 
 All packages required are in the requirements.txt. To get started with the IBM Recommendation Engine, clone this repository and install the necessary dependencies. Ensure you have Python 3.7 or later installed.
 
-```bash
-git clone https://github.com/adduke/IBM-recommendation-engine.git
-cd IBM-recommendation-engine
-pip install -r requirements.txt ```
+1) git clone https://github.com/adduke/IBM-recommendation-engine.git
+2) cd IBM-recommendation-engine
+3) pip install -r requirements.txt
 
 
 
@@ -40,11 +39,14 @@ In the vast world of IBM Watson Studio, users are surrounded by a wealth of arti
 
 ### What We’re Trying to Do
 
-Our goal with this recommendation engine is to make it easier for users to discover and interact with the assets most suited to them. By using smart algorithms to analyze user behavior and preferences, we aim to deliver personalized recommendations that improve the overall experience. Whether it's finding the right dataset for a project or discovering insightful articles, our system is designed to connect users with content that's truly valuable to them.
+Our goal with this recommendation engine is to make it easier for users to discover and interact with the assets most suited to them. \
+By using smart algorithms to analyze user behavior and preferences, we aim to deliver personalized recommendations that improve the overall experience. Whether it's finding the right dataset for a project or discovering insightful articles, our system is designed to connect users with content that's truly valuable to them.
 
 ### Why It Matters
 
-Personalization in the IBM Watson Studio ecosystem isn’t just a nice-to-have; it’s essential for enhancing user engagement and satisfaction. When users receive recommendations that are relevant and tailored to their interests, they’re more likely to find useful content and stay engaged with the platform. This not only improves the individual user experience but also helps users make the most out of the extensive resources available. In a world full of information, making those connections more intuitive and meaningful is what drives a better, more effective experience for everyone.
+Personalization in the IBM Watson Studio ecosystem isn’t just a nice-to-have; it’s essential for enhancing user engagement and satisfaction. When users receive recommendations that are relevant and tailored to their interests, they’re more likely to find useful content and stay engaged with the platform. 
+
+This not only improves the individual user experience but also helps users make the most out of the extensive resources available. In a world full of information, making those connections more intuitive and meaningful is what drives a better, more effective experience for everyone.
 
 
 
@@ -53,13 +55,13 @@ Personalization in the IBM Watson Studio ecosystem isn’t just a nice-to-have; 
 
 The main script available here to validate the implementation of our work is project_tests.py. Markdown cells were used to assist in walking through the thought process for individual steps.  
 
-README.md: This file, providing an overview of the project.
-requirements.txt: Contains a list of Python packages required to run the project.
-recommendation_engine.py: The main script that implements the recommendation algorithms.
-data/: Directory containing datasets used for training and evaluation.
-notebooks/: Jupyter notebooks used for exploratory data analysis and model evaluation.
-models/: Directory containing pre-trained models and model configuration files.
-scripts/: Helper scripts for data preprocessing, training, and evaluation.
+README.md: This file, providing an overview of the project. \
+requirements.txt: Contains a list of Python packages required to run the project. \
+recommendation_engine.py: The main script that implements the recommendation algorithms. \
+data/: Directory containing datasets used for training and evaluation. \
+notebooks/: Jupyter notebooks used for exploratory data analysis and model evaluation. \
+models/: Directory containing pre-trained models and model configuration files. \
+scripts/: Helper scripts for data preprocessing, training, and evaluation. 
 
 
 The notebooks folder was used for all necessary development of our model.
