@@ -52,16 +52,22 @@ This not only improves the individual user experience but also helps users make 
 
 
 ## File Descriptions <a name="files"></a>
+Recommendations_with_IBM.ipynb contains all sections for developing our recommendation engine:
+
+I. Exploratory Data Analysis
+II. Rank Based Recommendations
+III. User-User Based Collaborative Filtering
+IV. Content Based Recommendations (EXTRA - NOT REQUIRED)
+V. Matrix Factorization
+VI. Extras & Concluding
 
 The main script available here to validate the implementation of our work is project_tests.py. Markdown cells were used to assist in walking through the thought process for individual steps.  
 
 README.md: This file, providing an overview of the project. \
-requirements.txt: Contains a list of Python packages required to run the project. \
-recommendation_engine.py: The main script that implements the recommendation algorithms. \
 data/: Directory containing datasets used for training and evaluation. \
 notebooks/: Jupyter notebooks used for exploratory data analysis and model evaluation. \
 models/: Directory containing pre-trained models and model configuration files. \
-scripts/: Helper scripts for data preprocessing, training, and evaluation. 
+src/: Helper scripts for testing data preprocessing, training, and evaluation. 
 
 
 The notebooks folder was used for all necessary development of our model.
@@ -75,19 +81,13 @@ IBM-recommendation-engine/
 │   └── (processed data files like pickles)
 │
 ├── notebooks/
-│   ├── EDA.ipynb                      # Exploratory Data Analysis
-│   ├── Recommendations_with_IBM.ipynb # Rank Based and User-User Recommendations
-│   ├── Recommendations_with_IBM-zh.ipynb # Content Based Recommendations (Optional)
-│   └── Recommendation_Model.ipynb     # Matrix Factorization
+│   ├── Recommendations_with_IBM.html 
+│   └── Recommendations_with_IBM.ipynb # Rank Based and User-User Recommendations
 │
 ├── src/
-│   ├── data_preprocessing.py
-│   ├── rank_based_recommendations.py  # Code for Rank Based Recommendations
-│   ├── user_user_collaborative_filtering.py # Code for User-User Collaborative Filtering
-│   ├── content_based_recommendations.py # Code for Content Based Recommendations (Optional)
-│   ├── matrix_factorization.py         # Code for Matrix Factorization
-│   ├── project_tests.py
-│   └── utils.py
+│   ├── __init__.py
+│   └── project_tests.py
+│   
 │
 ├── models/
 │   ├── top_10.p
@@ -103,13 +103,7 @@ IBM-recommendation-engine/
 
 
 ## Instructions: <a name="instructions"></a>
-1. Run the following commands in the project's root directory to set up your database and model.
-
-    - To apply matrix factorization and generate recommendations
-        `python src/matrix_factorization.py`
-    - To test the functionality and validate the implementation.
-        `python src/project_tests.py`
-        ```
+1. Run the following Recommendations_with_IBM.ipynb in the project's root directory to set up your database and model.
 
 
 
