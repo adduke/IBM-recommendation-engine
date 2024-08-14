@@ -14615,7 +14615,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[97]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14657,7 +14657,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[97]:</div>
 
 
 
@@ -14732,198 +14732,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mf">1162.8</span><span class="p">,</span> <span class="mf">1304.8</span><span class="p">])]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>article_id</th>
-      <th>title</th>
-      <th>email</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">expected</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1330.0</span><span class="p">,</span> <span class="mf">1427.0</span><span class="p">,</span> <span class="mf">1364.0</span><span class="p">,</span> <span class="mf">1170.0</span><span class="p">,</span> <span class="mf">1162.8</span><span class="p">,</span> <span class="mf">1304.8</span><span class="p">,</span> <span class="mf">1351.0</span><span class="p">,</span> <span class="mf">1160.0</span><span class="p">,</span> <span class="mf">1354.0</span><span class="p">,</span> <span class="mf">1368.0</span><span class="p">]</span>
-<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">expected</span><span class="p">)]</span>
-<span class="n">expected_df</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">expected</span><span class="p">:</span>
-    <span class="n">expected_df</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-            <span class="s2">&quot;article_id&quot;</span><span class="p">:</span> <span class="n">article</span><span class="p">,</span>
-            <span class="c1"># Get article count</span>
-            <span class="s2">&quot;article_count&quot;</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">article</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="p">})</span>
-
-<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">expected_df</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>article_id</th>
-      <th>article_count</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1330.0</td>
-      <td>927</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1427.0</td>
-      <td>643</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1364.0</td>
-      <td>627</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1170.0</td>
-      <td>565</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1162.8</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>1304.8</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>1351.0</td>
-      <td>457</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>1160.0</td>
-      <td>433</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>1354.0</td>
-      <td>426</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>1368.0</td>
-      <td>418</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[99]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show df_content to get an idea of the data</span>
@@ -14945,7 +14754,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[99]:</div>
 
 
 
@@ -16326,7 +16135,7 @@ Your top_20 looks like the solution list! Nice job.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[95]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_item</span>
@@ -16347,7 +16156,7 @@ Your top_20 looks like the solution list! Nice job.
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[95]:</div>
 
 
 
@@ -16860,35 +16669,187 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>article_id</th>
+      <th>title</th>
+      <th>user_id</th>
+      <th>rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1430.0</td>
+      <td>using pixiedust for fast, flexible, and easier...</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1314.0</td>
+      <td>healthcare python streaming application demo</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1429.0</td>
+      <td>use deep learning for image classification</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1338.0</td>
+      <td>ml optimization using cognitive assistant</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1276.0</td>
+      <td>deploy your python model as a restful api</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>45988</th>
+      <td>1324.0</td>
+      <td>ibm watson facebook posts for 2015</td>
+      <td>5146</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>45989</th>
+      <td>142.0</td>
+      <td>neural networks for beginners: popular types a...</td>
+      <td>5146</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>45990</th>
+      <td>233.0</td>
+      <td>bayesian nonparametric models – stats and bots</td>
+      <td>5147</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>45991</th>
+      <td>1160.0</td>
+      <td>analyze accident reports on amazon emr spark</td>
+      <td>5148</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>45992</th>
+      <td>16.0</td>
+      <td>higher-order logistic regression for large dat...</td>
+      <td>5149</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>45993 rows × 4 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_article_names</span><span class="p">(</span><span class="n">article_ids</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    INPUT:</span>
 <span class="sd">    article_ids - (list) a list of article ids</span>
-<span class="sd">    df - (pandas dataframe) df as defined at the top of the notebook</span>
+<span class="sd">    df - (pandas dataframe) DataFrame containing article data</span>
 <span class="sd">    </span>
 <span class="sd">    OUTPUT:</span>
 <span class="sd">    article_names - (list) a list of article names associated with the list of article ids </span>
 <span class="sd">                    (this is identified by the title column)</span>
 <span class="sd">    &#39;&#39;&#39;</span>
-     <span class="c1"># Ensure article_ids is a list</span>
+    <span class="c1"># Ensure article_ids is a list</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">article_ids</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;article_ids should be a list of article ids.&quot;</span><span class="p">)</span>
     
-    <span class="c1"># Extract article names using the article_ids</span>
-    <span class="c1"># Convert string into integers</span>
-    <span class="n">article_ids</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">article_ids</span><span class="p">]</span>
-    <span class="n">article_names</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">article_ids</span><span class="p">)][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="c1"># Ensure article_ids are in the correct type</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">article_ids</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">article_ids</span><span class="p">]</span>
+    <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Error converting article_ids to integers: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
     
-    <span class="k">return</span> <span class="n">article_names</span> <span class="c1"># Return the article names associated with list of article ids</span>
-
+    <span class="c1"># Remove duplicates from article_ids to prevent multiple lookups</span>
+    <span class="n">article_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">article_ids</span><span class="p">))</span>
+    
+    <span class="c1"># Filter DataFrame to get titles associated with article_ids</span>
+    <span class="c1"># Ensure no duplicate titles are added</span>
+    <span class="n">article_names</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">article_ids</span><span class="p">)][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    
+    <span class="k">return</span> <span class="n">article_names</span>
 
 <span class="k">def</span> <span class="nf">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
@@ -16974,7 +16935,7 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check Results</span>
@@ -16996,22 +16957,22 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0             visualize data with the matplotlib library
-12                                  car performance data
-20     using deep learning with keras to predict cust...
-30     deep forest: towards an alternative to deep ne...
-32         this week in data science (february 14, 2017)
-38                      ml algorithm != learning machine
-39             markdown for jupyter notebooks cheatsheet
-73                the power of machine learning in spark
-193                 recent trends in recommender systems
-280                  machine learning for the enterprise
+<pre>0         healthcare python streaming application demo
+1    predicting churn with the spss random tree alg...
+2                         maximize oil company profits
+3              discover hidden facebook usage insights
+4    learn tensorflow and deep learning together an...
+5            using brunel in ipython/jupyter notebooks
+6                     ml algorithm != learning machine
+7                 web picks (week of 4 september 2017)
+8                      generalization in deep learning
+9     from spark ml model to online scoring with scala
 dtype: object</pre>
 </div>
 
@@ -17026,7 +16987,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test your functions here - No need to change this code - just run this cell</span>
@@ -17072,7 +17033,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_id</span><span class="o">=</span><span class="mi">131</span>
@@ -17109,7 +17070,7 @@ dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
 
 
 
@@ -17239,7 +17200,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
@@ -17304,7 +17265,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
@@ -17327,7 +17288,7 @@ dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[73]:</div>
 
 
 
@@ -17513,7 +17474,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[100]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">user_user_recs_part2</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
@@ -17540,62 +17501,36 @@ dtype: object</pre>
 <span class="sd">    before choosing those with fewer total interactions.</span>
 <span class="sd">    &#39;&#39;&#39;</span>
     <span class="c1"># get articles user has already seen</span>
-    <span class="n">user_articles</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+    <span class="n">article_ids</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
     <span class="c1"># find similar users</span>
-    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
     <span class="n">most_similar_users</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span><span class="o">.</span><span class="n">neighbor_id</span><span class="p">)</span>
-    <span class="c1"># How many users</span>
-    <span class="n">n_users</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">most_similar_users</span><span class="p">)</span>
-    
-    <span class="n">recs</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">new_recs</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">df_rec</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-    <span class="c1"># Define maximum similarity</span>
-    <span class="n">max_similarity</span> <span class="o">=</span> <span class="n">neighbors_df</span><span class="o">.</span><span class="n">similarity</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-    <span class="n">similarity</span> <span class="o">=</span> <span class="n">max_similarity</span>
-    <span class="k">for</span> <span class="n">similar_user</span> <span class="ow">in</span> <span class="n">most_similar_users</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">similarity</span> <span class="o">&lt;</span> <span class="n">max_similarity</span><span class="p">:</span>
-            <span class="k">break</span>
 
+    <span class="n">article_interactions</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;article_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span>
+    <span class="n">article_interactions</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">article_interactions</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+
+    
+    <span class="n">final_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">new_recs</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">similar_user</span> <span class="ow">in</span> <span class="n">most_similar_users</span><span class="p">:</span>
         <span class="c1"># Get articles seen by the similar user</span>
         <span class="n">similar_articles_id</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">similar_user</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span>
 
         <span class="c1"># Add articles that the current user hasn&#39;t seen</span>
-        <span class="n">new_recs</span> <span class="o">=</span> <span class="p">[</span><span class="n">article</span> <span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">similar_articles_id</span> <span class="k">if</span> <span class="n">article</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">user_articles</span><span class="p">]</span>
+        <span class="n">new_recs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">setdiff1d</span><span class="p">(</span><span class="n">similar_articles_id</span><span class="p">,</span> <span class="n">article_ids</span><span class="p">,</span> <span class="n">assume_unique</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="c1">#print(new_recs)</span>
+        
+        <span class="n">recs_to_add</span> <span class="o">=</span> <span class="n">article_interactions</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">new_recs</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">index</span>
 
-        <span class="c1"># Prepare a list to hold results</span>
-        <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">final_list</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">recs_to_add</span><span class="p">)</span>
 
-        <span class="c1"># Iterate through the list of articles</span>
-        <span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">r</span><span class="p">))</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">new_recs</span><span class="p">]:</span>
-            <span class="c1"># Get similarity for the article</span>
-            <span class="n">similarity</span> <span class="o">=</span> <span class="n">neighbors_df</span><span class="p">[</span><span class="n">neighbors_df</span><span class="p">[</span><span class="s1">&#39;neighbor_id&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">similar_user</span><span class="p">][</span><span class="s1">&#39;similarity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">final_list</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">m</span><span class="p">:</span>
+            <span class="k">break</span>
 
-            <span class="c1"># Get article count</span>
-            <span class="n">article_count</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">article</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-
-            <span class="c1"># Append the data to the results list</span>
-            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-                <span class="s1">&#39;neighbor_id&#39;</span><span class="p">:</span> <span class="n">similar_user</span><span class="p">,</span>
-                <span class="s1">&#39;article_id&#39;</span><span class="p">:</span> <span class="n">article</span><span class="p">,</span>
-                <span class="s1">&#39;similarity&#39;</span><span class="p">:</span> <span class="n">similarity</span><span class="p">,</span>
-                <span class="s1">&#39;article_count&#39;</span><span class="p">:</span> <span class="n">article_count</span>
-            <span class="p">})</span>
-
-        <span class="c1"># Create a DataFrame from the results</span>
-        <span class="n">df_results</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
-
-        <span class="c1"># Concatenate existing DataFrame for all neighbors</span>
-        <span class="n">df_rec</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_rec</span><span class="p">,</span> <span class="n">df_results</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-
-    <span class="n">df_rec</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;similarity&#39;</span><span class="p">,</span> <span class="s1">&#39;article_count&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">df_rec</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">df_rec</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s1">&#39;article_id&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="c1">#print(df_rec)</span>
-    <span class="n">recs</span> <span class="o">=</span> <span class="n">df_rec</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">m</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="n">recs</span> <span class="o">=</span> <span class="n">final_list</span><span class="p">[:</span><span class="n">m</span><span class="p">]</span>
     <span class="n">rec_names</span> <span class="o">=</span> <span class="n">get_article_names</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="n">recs</span><span class="p">,</span> <span class="n">rec_names</span><span class="p">,</span> <span class="n">df_rec</span>
+    <span class="k">return</span> <span class="n">recs</span><span class="p">,</span> <span class="n">rec_names</span>
 </pre></div>
 
      </div>
@@ -17608,296 +17543,11 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_recommendations2</span> <span class="o">=</span> <span class="n">user_user_recs_part2</span><span class="p">(</span><span class="mi">20</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span>
-<span class="n">df_recommendations2</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>neighbor_id</th>
-      <th>article_id</th>
-      <th>similarity</th>
-      <th>article_count</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>204</td>
-      <td>1429</td>
-      <td>2.0</td>
-      <td>937</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>170</td>
-      <td>1330</td>
-      <td>2.0</td>
-      <td>927</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>40</td>
-      <td>1431</td>
-      <td>2.0</td>
-      <td>671</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>170</td>
-      <td>1427</td>
-      <td>2.0</td>
-      <td>643</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>170</td>
-      <td>1364</td>
-      <td>2.0</td>
-      <td>627</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>620</th>
-      <td>98</td>
-      <td>1198</td>
-      <td>1.0</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <th>621</th>
-      <td>98</td>
-      <td>1363</td>
-      <td>1.0</td>
-      <td>22</td>
-    </tr>
-    <tr>
-      <th>623</th>
-      <td>98</td>
-      <td>522</td>
-      <td>1.0</td>
-      <td>17</td>
-    </tr>
-    <tr>
-      <th>624</th>
-      <td>98</td>
-      <td>986</td>
-      <td>1.0</td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <th>625</th>
-      <td>98</td>
-      <td>1116</td>
-      <td>1.0</td>
-      <td>4</td>
-    </tr>
-  </tbody>
-</table>
-<p>229 rows × 4 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">expected</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1330.0</span><span class="p">,</span> <span class="mf">1427.0</span><span class="p">,</span> <span class="mf">1364.0</span><span class="p">,</span> <span class="mf">1170.0</span><span class="p">,</span> <span class="mf">1162.8</span><span class="p">,</span> <span class="mf">1304.8</span><span class="p">,</span> <span class="mf">1351.0</span><span class="p">,</span> <span class="mf">1160.0</span><span class="p">,</span> <span class="mf">1354.0</span><span class="p">,</span> <span class="mf">1368.0</span><span class="p">]</span>
-<span class="n">expected</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">expected</span><span class="p">]</span>
-<span class="n">df_recommendations2</span><span class="p">[</span><span class="n">df_recommendations2</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">expected</span><span class="p">)]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>neighbor_id</th>
-      <th>article_id</th>
-      <th>similarity</th>
-      <th>article_count</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>6</th>
-      <td>170</td>
-      <td>1330</td>
-      <td>2.0</td>
-      <td>927</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>170</td>
-      <td>1427</td>
-      <td>2.0</td>
-      <td>643</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>170</td>
-      <td>1364</td>
-      <td>2.0</td>
-      <td>627</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>170</td>
-      <td>1170</td>
-      <td>2.0</td>
-      <td>565</td>
-    </tr>
-    <tr>
-      <th>72</th>
-      <td>170</td>
-      <td>1351</td>
-      <td>2.0</td>
-      <td>457</td>
-    </tr>
-    <tr>
-      <th>86</th>
-      <td>170</td>
-      <td>1160</td>
-      <td>2.0</td>
-      <td>433</td>
-    </tr>
-    <tr>
-      <th>90</th>
-      <td>170</td>
-      <td>1354</td>
-      <td>2.0</td>
-      <td>426</td>
-    </tr>
-    <tr>
-      <th>94</th>
-      <td>170</td>
-      <td>1368</td>
-      <td>2.0</td>
-      <td>418</td>
-    </tr>
-    <tr>
-      <th>100</th>
-      <td>204</td>
-      <td>1305</td>
-      <td>2.0</td>
-      <td>413</td>
-    </tr>
-    <tr>
-      <th>142</th>
-      <td>170</td>
-      <td>1163</td>
-      <td>2.0</td>
-      <td>290</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[431]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Quick spot check - don&#39;t change this code - just use it to test your functions</span>
-<span class="n">rec_ids</span><span class="p">,</span> <span class="n">rec_names</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">user_user_recs_part2</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">rec_ids</span><span class="p">,</span> <span class="n">rec_names</span> <span class="o">=</span> <span class="n">user_user_recs_part2</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The top 10 recommendations for user 20 are the following article ids:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">rec_ids</span><span class="p">)</span><span class="o">.</span><span class="n">unique</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">()</span>
@@ -17925,1089 +17575,32 @@ dtype: object</pre>
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>The top 10 recommendations for user 20 are the following article ids:
-&lt;bound method Series.unique of 0    1330
-1    1170
-2      43
-3    1393
-4    1305
-5    1336
-6    1165
-7    1172
-8    1432
-9     124
-dtype: int64&gt;
+&lt;bound method Series.unique of 0    1330.0
+1    1427.0
+2    1364.0
+3    1170.0
+4    1162.0
+5    1304.0
+6    1351.0
+7    1160.0
+8    1354.0
+9    1368.0
+dtype: object&gt;
 
 The top 10 recommendations for user 20 are the following article names:
-&lt;bound method Series.unique of 0           visualize data with the matplotlib library
-1             apache spark lab, part 1: basic concepts
-2           visualize data with the matplotlib library
-3                         the nurse assignment problem
-4           visualize data with the matplotlib library
-                             ...                      
-4594    python machine learning: scikit-learn tutorial
-4595       insights from new york car accident reports
-4596       insights from new york car accident reports
-4597                        analyze precipitation data
-4598        gosales transactions for naive bayes model
-Length: 4599, dtype: object&gt;
+&lt;bound method Series.unique of 0             apache spark lab, part 1: basic concepts
+1    predicting churn with the spss random tree alg...
+2              analyze energy consumption in buildings
+3    use xgboost, scikit-learn &amp; ibm watson machine...
+4             putting a human face on machine learning
+5    gosales transactions for logistic regression m...
+6          insights from new york car accident reports
+7                    model bike sharing data with spss
+8         analyze accident reports on amazon emr spark
+9    movie recommender system with spark machine le...
+dtype: object&gt;
 </pre>
 </div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[432]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_user_recs_part2</span><span class="p">(</span><span class="n">user_id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[432]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>([1170, 43, 1305, 732, 109, 1391, 1183, 268, 981, 910],
- [&#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;sudoku&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;sudoku&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;sudoku&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;sudoku&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;sudoku&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;rapidly build machine learning flows with dsx&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sudoku&#39;,
-  &#39;super fast string matching in python&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sudoku&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sudoku&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sudoku&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sudoku&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sudoku&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;sudoku&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sudoku&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sudoku&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;gosales transactions for naive bayes model&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;sudoku&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;sector correlations shiny app&#39;,
-  &#39;tensorflow quick tips&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;apache spark lab, part 1: basic concepts&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  &#39;deep learning with tensorflow course by big data university&#39;,
-  ...],
-      neighbor_id  article_id  similarity  article_count
- 0           3933        1170        35.0            565
- 1           3933          43        35.0            460
- 2           3933        1305        35.0            413
- 3           3933         732        35.0            239
- 4           3933         109        35.0            198
- ..           ...         ...         ...            ...
- 114           23         517        17.0              8
- 115           23        1148        17.0              8
- 116           23        1291        17.0              7
- 117           23         800        17.0              4
- 118           23        1101        17.0              2
- 
- [111 rows x 4 columns])</pre>
-</div>
-
 </div>
 
 </div>
@@ -19031,7 +17624,7 @@ Length: 4599, dtype: object&gt;
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[433]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Tests with a dictionary of results</span>
@@ -19077,7 +17670,7 @@ Length: 4599, dtype: object&gt;
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[434]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Dictionary Test Here</span>
@@ -19161,7 +17754,7 @@ If the platform has social features, recommend articles that the user’s friend
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_user</span> <span class="o">=</span> <span class="s1">&#39;0.0&#39;</span>
@@ -19182,7 +17775,7 @@ If the platform has social features, recommend articles that the user’s friend
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[79]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="nb">set</span><span class="p">(</span><span class="n">new_user_recs</span><span class="p">)</span> <span class="o">==</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;1314.0&#39;</span><span class="p">,</span><span class="s1">&#39;1429.0&#39;</span><span class="p">,</span><span class="s1">&#39;1293.0&#39;</span><span class="p">,</span><span class="s1">&#39;1427.0&#39;</span><span class="p">,</span><span class="s1">&#39;1162.0&#39;</span><span class="p">,</span><span class="s1">&#39;1364.0&#39;</span><span class="p">,</span><span class="s1">&#39;1304.0&#39;</span><span class="p">,</span><span class="s1">&#39;1170.0&#39;</span><span class="p">,</span><span class="s1">&#39;1431.0&#39;</span><span class="p">,</span><span class="s1">&#39;1330.0&#39;</span><span class="p">]),</span> <span class="s2">&quot;Oops!  It makes sense that in this case we would want to recommend the most popular articles, because we don&#39;t know anything about these users.&quot;</span>
@@ -19236,7 +17829,7 @@ If the platform has social features, recommend articles that the user’s friend
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">make_content_recs</span><span class="p">():</span>
@@ -19294,7 +17887,7 @@ If the platform has social features, recommend articles that the user’s friend
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># make recommendations for a brand new user</span>
@@ -19326,7 +17919,7 @@ If the platform has social features, recommend articles that the user’s friend
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load the matrix here</span>
@@ -19343,7 +17936,7 @@ If the platform has social features, recommend articles that the user’s friend
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># quick look at the matrix</span>
@@ -19365,7 +17958,7 @@ If the platform has social features, recommend articles that the user’s friend
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
 
 
 
@@ -19585,7 +18178,7 @@ If the platform has social features, recommend articles that the user’s friend
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Perform SVD on the User-Item Matrix Here</span>
@@ -19628,7 +18221,7 @@ If the platform has social features, recommend articles that the user’s friend
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_latent_feats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">700</span><span class="o">+</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
@@ -19725,7 +18318,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_train</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40000</span><span class="p">)</span>
@@ -19777,13 +18370,13 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/var/folders/bc/lpygvyqj3_d1x9b56_xqdnbc0000gn/T/ipykernel_11594/925533173.py:17: SettingWithCopyWarning: 
+<pre>/var/folders/bc/lpygvyqj3_d1x9b56_xqdnbc0000gn/T/ipykernel_29752/925533173.py:17: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   df[&#39;rating&#39;] = 1
-/var/folders/bc/lpygvyqj3_d1x9b56_xqdnbc0000gn/T/ipykernel_11594/925533173.py:17: SettingWithCopyWarning: 
+/var/folders/bc/lpygvyqj3_d1x9b56_xqdnbc0000gn/T/ipykernel_29752/925533173.py:17: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -19802,7 +18395,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;articles of the test set we can make predictions for&#39;</span><span class="p">)</span>
@@ -19858,7 +18451,7 @@ users of the test set we cant make predictions for
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Replace the values in the dictionary below</span>
@@ -19924,7 +18517,7 @@ users of the test set we cant make predictions for
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># fit SVD on the user_item_train matrix</span>
@@ -19947,7 +18540,7 @@ users of the test set we cant make predictions for
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
 
 
 
@@ -19967,7 +18560,7 @@ users of the test set we cant make predictions for
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use these cells to see how well you can use the training </span>
@@ -19995,7 +18588,7 @@ users of the test set we cant make predictions for
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test data</span>
@@ -20014,7 +18607,7 @@ users of the test set we cant make predictions for
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">latent_feats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
@@ -20214,7 +18807,7 @@ Then through conducting online A/B testing to compare performance against a cont
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">call</span>
@@ -20241,7 +18834,7 @@ Then through conducting online A/B testing to compare performance against a cont
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
 <pre>[NbConvertApp] Converting notebook notebooks/Recommendations_with_IBM.ipynb to html
-[NbConvertApp] Writing 809887 bytes to notebooks/Recommendations_with_IBM.html
+[NbConvertApp] Writing 776963 bytes to notebooks/Recommendations_with_IBM.html
 </pre>
 </div>
 </div>
@@ -20249,7 +18842,7 @@ Then through conducting online A/B testing to compare performance against a cont
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
 
 
 
@@ -20262,6 +18855,22 @@ Then through conducting online A/B testing to compare performance against a cont
 
 </div>
 
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div>
